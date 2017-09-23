@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratorio</title>
+  </head>
+  <body>
+
+    <h3 onclick="clicks()">Hacer click aquí</h3>
+    <p id="txtClick"></p>
+    <br>
+    <h3 onmouseover="poner()">Poner el puntero aquí</h3>
+    <p id="txtPoner"></p>
+
+    <script type="text/javascript">
+
+    var contador1 = 0;
+    var contador2 = 0;
+
+    function clicks()
+    {
+      contador1++;
+      document.getElementById("txtClick").innerHTML = contador1;
+	  }
+
+    function poner()
+    {
+      contador2++;
+      document.getElementById("txtPoner").innerHTML = contador2;
+    }
+
+
+    </script>
+
+  </body>
+</html>
